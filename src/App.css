@@ -1,5 +1,5 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Amazon Ember", sans-serif;
   margin: 0;
 }
 
@@ -37,8 +37,9 @@
 
 /* MATERIAS */
 .materias-container {
-  width: 50%;
-  padding: 100px;
+  width: auto;
+  padding: 50px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,13 +48,58 @@
 .materias-header {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+.materias-button {
+  background-color: #198653;
+  color: #fff;
+  border: none;
+  border-radius: 20%;
+  padding: 8px 12px;
+}
+
+.materias-button:hover {
+  background-color: #156e45;
+  cursor: pointer;
 }
 
 table,
 td,
 th {
-  border: #737373 1px solid;
+  border: #c7c7c7 1px solid;
   border-collapse: collapse;
+  font-size: 20px;
+  text-align: center;
+  width: auto;
+  padding: 10px;
+}
+
+tr {
+  font-size: large;
+}
+
+tbody:nth-child(even) {
+  background-color: #dfdfdf;
+}
+
+tr:hover {
+  background-color: #cccccc;
+}
+
+/* HORARIO */
+.horario-button {
+  background-color: #dd3544;
+  color: #fff;
+  border: none;
+  border-radius: 20%;
+  padding: 8px 12px;
+}
+
+.horario-button:hover {
+  background-color: #b62d39;
+  cursor: pointer;
 }
 
 /* FOOTER */
@@ -61,7 +107,6 @@ th {
   display: flex;
   justify-content: center;
   background-color: #082aa6;
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
