@@ -1,5 +1,7 @@
 import { Component } from "react";
 import "./App.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -68,16 +70,51 @@ class App extends Component {
   agregar = (m) => {
     this.setState({ horario: [...this.state.horario, m] });
     console.log(m);
+
+    toast.success("😎 Materia agregada", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
   };
 
   eliminar = (h) => {
     const temporal = this.state.horario.filter((r, i) => r.key !== h.key);
     this.setState({ horario: temporal });
+
+    toast.error("😒 Materia eliminada", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
   };
 
   render() {
     return (
       <>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss={false}
+          draggable
+          theme="light"
+        />
+        {/* Same as */}
+        <ToastContainer />
         <Header />
         <Banner />
         <div className="forms-container">
