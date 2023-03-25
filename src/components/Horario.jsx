@@ -8,7 +8,9 @@ const Horario = (props) => {
           <h2 className="materias-header">No tienes materias</h2>
         ) : (
           <>
-            <h2 className="materias-header">Horario</h2>
+            <h2 className="materias-header">
+              Mi horario: {props.horario.length} materias
+            </h2>
             <table>
               <thead>
                 <tr>

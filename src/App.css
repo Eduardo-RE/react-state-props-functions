@@ -7,6 +7,7 @@
 .forms-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   width: auto;
 }
 
@@ -42,7 +43,6 @@
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .materias-header {
