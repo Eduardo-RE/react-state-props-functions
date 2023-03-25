@@ -4,7 +4,7 @@ const Horario = (props) => {
   return (
     <>
       <div className="materias-container">
-        {this.state.horario.length === 0 ? (
+        {props.horario.length === 0 ? (
           <h2 className="materias-header">No tienes materias</h2>
         ) : (
           <>
@@ -18,16 +18,16 @@ const Horario = (props) => {
                   <th>Grupo</th>
                 </tr>
               </thead>
-              {props.materias.map((m, index) => (
+              {props.horario.map((h, index) => (
                 <tbody>
                   <tr key={index}>
-                    <td>{m.key}</td>
-                    <td>{m.subject}</td>
-                    <td>{m.hour}</td>
-                    <td>{m.class}</td>
+                    <td>{h.key}</td>
+                    <td>{h.subject}</td>
+                    <td>{h.hour}</td>
+                    <td>{h.class}</td>
                     <td>
                       <button
-                        // onClick={() => props.eliminar(m.key)}
+                        onClick={() => props.eliminar(h)}
                         className="horario-button"
                       >
                         -
