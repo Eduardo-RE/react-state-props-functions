@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-state-props-functions/static/css/main.708dd12e.css",
+    "main.js": "/react-state-props-functions/static/js/main.bfa6a798.js",
+    "static/js/787.10ff0ffa.chunk.js": "/react-state-props-functions/static/js/787.10ff0ffa.chunk.js",
+    "static/media/logo.jpg": "/react-state-props-functions/static/media/logo.b5ce533abe2cfd32691b.jpg",
+    "index.html": "/react-state-props-functions/index.html",
+    "main.708dd12e.css.map": "/react-state-props-functions/static/css/main.708dd12e.css.map",
+    "main.bfa6a798.js.map": "/react-state-props-functions/static/js/main.bfa6a798.js.map",
+    "787.10ff0ffa.chunk.js.map": "/react-state-props-functions/static/js/787.10ff0ffa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.708dd12e.css",
+    "static/js/main.bfa6a798.js"
+  ]
+}
